@@ -1,6 +1,8 @@
 package com.kleber.tests;
 
+import com.kleber.dao.ProductDao;
 import com.kleber.model.Product;
+import com.kleber.util.JPAUtil;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -19,12 +21,13 @@ public class ProductRegistration {
 //        cellphone.setPrice(new BigDecimal("800"));
 
         // Provided parameter is the name in persistence unit
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("store");
 
-        EntityManager em = factory.createEntityManager();
+        EntityManager em = JPAUtil.getEntityManager();
+
+        ProductDao productDao = new ProductDao(em);
 
         em.getTransaction().begin();
-        em.persist(cellphone);
+        productDao.cadastrar(cellphone);
         em.getTransaction().commit();
         em.close();
 
