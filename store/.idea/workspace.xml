@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9163907b-7204-4468-b9fd-20b281acd5b3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kleber/MyResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kleber/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kleber/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kleber/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kleber/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kleber/tests/ProductRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kleber/tests/ProductRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kleber/util/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kleber/util/JPAUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,6 +85,7 @@
       <updated>1693668191477</updated>
       <workItem from="1693668192266" duration="7130000" />
       <workItem from="1693753234748" duration="1741000" />
+      <workItem from="1694022721381" duration="7489000" />
     </task>
     <servers />
   </component>
@@ -86,5 +94,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/store$ProductRegistration.ic" NAME="ProductRegistration Coverage Results" MODIFIED="1694438272104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.kleber.tests.*</FILTER>
+    </SUITE>
   </component>
 </project>

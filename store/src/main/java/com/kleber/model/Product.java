@@ -2,6 +2,7 @@ package com.kleber.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "products")
@@ -13,14 +14,19 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+    private LocalDate dataOfRegistration = LocalDate.now();
+
+    @ManyToOne
+    private Category category;
 
     public Product() {
     }
 
-    public Product(String name, String description, BigDecimal price) {
+    public Product(String name, String description, BigDecimal price, Category category) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.category = category;
     }
 
     public Long getId() {
@@ -49,5 +55,21 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public LocalDate getDataOfRegistration() {
+        return dataOfRegistration;
+    }
+
+    public void setDataOfRegistration(LocalDate dataOfRegistration) {
+        this.dataOfRegistration = dataOfRegistration;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
